@@ -1,7 +1,9 @@
 # Replication data for "Humidity’s role in population heat-health risk"
-This repository contains the dataset and Jupyter Notebooks that can be used to reproduce all figures in the paper "***Integrating human biophysics and data-driven analysis to assess humidity’s role in heatstroke prediction***" by Kong et al. (2025). There are two folders:
+This repository contains the scripts, intermediate dataset, and Jupyter Notebooks that can be used to reproduce all figures in the paper "***Humidity’s role in population heat-health risk***" by Kong et al. (2025). There are three folders:
 
-- **./Jupyternotebook**: Jupyter Notebooks for reproducing figures in "Integrating human biophysics and data-driven analysis to assess humidity’s role in heatstroke prediction" by Kong et al.
+- **./R scripts**: R scripts for heatstroke prediction using Generalized Additive Models (GAMs).
+
+- **./Jupyternotebook**: Jupyter Notebooks for reproducing figures in "Humidity’s role in population heat-health risk" by Kong et al.
 
 
 - **./data**: dataset needed for running Jupyter notebooks including the following:
