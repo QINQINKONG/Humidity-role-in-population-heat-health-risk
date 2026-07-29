@@ -1,4 +1,4 @@
-# Replication data for "Integrating human biophysics and data-driven analysis to assess humidity’s role in heatstroke prediction"
+# Replication data for "Humidity’s role in population heat-health risk"
 This repository contains the dataset and Jupyter Notebooks that can be used to reproduce all figures in the paper "***Integrating human biophysics and data-driven analysis to assess humidity’s role in heatstroke prediction***" by Kong et al. (2025). There are two folders:
 
 - **./Jupyternotebook**: Jupyter Notebooks for reproducing figures in "Integrating human biophysics and data-driven analysis to assess humidity’s role in heatstroke prediction" by Kong et al.
