@@ -39,3 +39,10 @@ This repository contains the scripts, intermediate dataset, and Jupyter Notebook
 
   - `corr.nc`
     Pearson correlation coefficient between summer (June-Sep for NH, and Dec-Mar for SH) average temperature and vapor pressure.
+    
+  - `heatstroke_2010_2019.npy`
+    Daily heatstroke numbers across 47 prefectures during summer (June-Sep) of 2010-2019.
+    
+  - `tas_daily_2010_2019.npy`
+    Daily average temperature across 47 prefectures during summer (June-Sep) of 2010-2019.
+    
