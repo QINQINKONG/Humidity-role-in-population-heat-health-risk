@@ -9,7 +9,12 @@ This repository contains the scripts, intermediate dataset, and Jupyter Notebook
 - **./data**: dataset needed for running Jupyter notebooks including the following:
 
   - `GHSI_MAE.nc`
-    Mean absolute error (MAE) of daily heatstroke prediction at each prefecture (dim: pf) conditional on a wide range of humidity weight (dim: beta) for both outdoor and indoor (dim: exposure) version of General Heat Stress Index (GHSI). MAE is calculated as an average across the validation periods of a 10-fold cross valiation during 2010-2019
+    Mean absolute error (MAE) of daily heatstroke prediction at each prefecture (dim: pf) conditional on a wide range of humidity weight (dim: beta) for both outdoor and indoor (dim: exposure) version of General Heat Stress Index (GHSI). GHSI is first calculated at hourly scale and then aggregated to daily averages. MAE is calculated as an average across the validation periods of a 10-fold cross valiation during 2010-2019
+  - `dmax_GHSI_MAE.nc`
+    Same as `GHSI_MAE.nc` except that daily maximum GSHI is used for prediction instead of daily averages.
+
+  - `dmin_GHSI_MAE.nc`
+    Same as `GHSI_MAE.nc` except that daily minimum GSHI is used for prediction instead of daily averages.
 
   - `HSI_MAE.nc`
     Mean absolute error (MAE) of daily heatstroke prediction at each prefecture (dim: pf) by existing heat stress indices (dim: HSI). MAE is calculated as an average across the validation periods of a 10-fold cross valiation during 2010-2019. Ta: dry-bulb temperature; WBGT: wet-bulb globe temperature; WBGTin: indoor WBGT; UTCI: universal thermal climate index; Hx: Humidex; HI: heat index; UTCIin: indoor UTCI; Tw: wet-bulb temperature; sWBGT: simplified WBGT; Ts: lethal temperature
