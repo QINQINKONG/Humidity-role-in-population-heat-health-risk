@@ -1,5 +1,5 @@
 # Replication data for "Humidity’s role in population heat-health risk"
-This repository contains the scripts, intermediate dataset, and Jupyter Notebooks that can be used to reproduce all figures in the paper "***Humidity’s role in population heat-health risk***" by Kong et al. (2025). There are three folders:
+This repository contains the scripts, intermediate dataset, and Jupyter Notebooks that can be used to reproduce all figures in the paper "***Humidity’s role in population heat-health risk***" by Kong et al. (2026). There are three folders:
 
 - **./R scripts**: R scripts for heatstroke prediction using Generalized Additive Models (GAMs).
 
