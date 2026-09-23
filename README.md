@@ -50,4 +50,9 @@ There are three folders:
     
   - `tas_daily_2010_2019.npy`
     Daily average temperature across 47 prefectures during summer (June-Sep) of 2010-2019.
-    
+
+## License
+
+The source code in this repository is licensed under the GNU General Public License v3.0 (GPL-3.0). See the `LICENSE` file for details.
+
+Data files included in this repository are derived from publicly available third-party datasets and remain subject to the terms and attribution requirements of their respective data providers. See `data/README.md` for data sources and applicable terms of use.    
