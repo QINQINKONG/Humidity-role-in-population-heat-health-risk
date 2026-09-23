@@ -34,7 +34,7 @@ authors:
   - family-names: "Bendavid"
     given-names: "Eran"
 
-version: 1.1.0
+version: 1.1.1
 date-released: 2026-09-22
 
 repository-code: "https://github.com/QINQINKONG/Humidity-role-in-population-heat-health-risk"
