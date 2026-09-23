@@ -16,7 +16,8 @@ library(mgcv)
 
 np <- import("numpy")
 
-input_dir <- "./" # the input file "HS_daily_2010-2019.npz is stored within this Zenodo repository"
+input_dir <- "./" # the input file "HS_daily_2010-2019.npz is stored within this Zenodo repository, but not in GitHub because of file size"
+
 output_dir <- "./" # feel free to change it to your own directory
 
 # Load the input data
