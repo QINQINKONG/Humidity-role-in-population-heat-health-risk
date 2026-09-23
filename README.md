@@ -11,7 +11,7 @@ There are three folders:
 - **./Jupyternotebook**: Jupyter Notebooks for reproducing figures in "Humidity’s role in population heat-health risk" by Kong et al.
 
 
-- **./data**: dataset needed for running Jupyter notebooks including the following:
+- **./data**: intermediate dataset needed for running Jupyter notebooks including the following:
 
   - `GHSI_MAE.nc`
     Mean absolute error (MAE) of daily heatstroke prediction at each prefecture (dim: pf) conditional on a wide range of humidity weight (dim: beta) for both outdoor and indoor (dim: exposure) version of General Heat Stress Index (GHSI). GHSI is first calculated at hourly scale and then aggregated to daily averages. MAE is calculated as an average across the validation periods of a leave-one-year-out cross-validation during 2010-2019
