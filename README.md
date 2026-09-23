@@ -1,6 +1,6 @@
 # Code and data for “Humidity’s role in population heat-health risk”
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22904232.svg)](https://doi.org/10.5281/zenodo.22904232)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22909502.svg)](https://doi.org/10.5281/zenodo.22909502)
 
 This repository contains the scripts, intermediate dataset, and Jupyter Notebooks that can be used to reproduce all figures in the paper "***Humidity’s role in population heat-health risk***" by Kong et al. (2026) accepted by *Nature Communications*. 
 
