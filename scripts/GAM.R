@@ -26,11 +26,11 @@ date_array_summer <- np$load(paste0(input_dir, "HS_daily_2010-2019.npz"))$f[["da
 # Social economic data: population number, the proportion of old people, and income
 social_economic <- np$load(paste0(input_dir, "HS_daily_2010-2019.npz"))$f[["social_economic"]]  # (47, 3, 1220)
 # Heat exposure on the current day
-jp_hsi_mean_summer <- np$load(paste0(input_dir, "HS_daily_2010-2019.npz"))$f[["jp_hsi_mean_summer"]]  # (2451, 47, 1220)
+GHSI <- np$load(paste0(input_dir, "HS_daily_2010-2019.npz"))$f[["GHSI"]]  # (2451, 47, 1220)
 # Heat exposure one day before
-jp_hsi_mean_summer_1 <- np$load(paste0(input_dir, "HS_daily_2010-2019.npz"))$f[["jp_hsi_mean_summer_1"]]  # (2451, 47, 1220)
+GHSI_lag1 <- np$load(paste0(input_dir, "HS_daily_2010-2019.npz"))$f[["GHSI_lag1"]]  # (2451, 47, 1220)
 # Heat exposure two days before
-jp_hsi_mean_summer_2 <- np$load(paste0(input_dir, "HS_daily_2010-2019.npz"))$f[["jp_hsi_mean_summer_2"]]  # (2451, 47, 1220)
+GHSI_lag2 <- np$load(paste0(input_dir, "HS_daily_2010-2019.npz"))$f[["GHSI_lag2"]]  # (2451, 47, 1220)
 
 # Load the heatstroke data
 all_htk <- np$load(paste0(input_dir, "HS_daily_2010-2019.npz"))$f[["all_htk"]]  # (47, 1220)
@@ -62,9 +62,9 @@ for (pf in seq(47)) {
     cali_idx <- which(date_array_summer[, 1] != yy + 2009)
 
     for (var in seq(2451)){
-      pf_data$hsi <- jp_hsi_mean_summer[var, pf,]
-      pf_data$hsi_1 <- jp_hsi_mean_summer_1[var, pf,]
-      pf_data$hsi_2 <- jp_hsi_mean_summer_2[var, pf,]
+      pf_data$hsi <- GHSI[var, pf,]
+      pf_data$hsi_1 <- GHSI_lag1[var, pf,]
+      pf_data$hsi_2 <- GHSI_lag2[var, pf,]
 
       # Fit GAM using HSI and lagged HSI terms
       mod_clm = gam(heatstroke ~ s(hsi, k=k_sum)
